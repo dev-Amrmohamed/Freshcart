@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ProductInfo from "../../Components/Productinfo/Productinfo";
+import ProductInfo from "../../Components/ProductInfo/ProductInfo";
 import { useParams } from "react-router";
 import { getProductById } from "../../services/product-services";
 import ProductDetailsTaps from "../../Components/productDetailsTaps/productDetailsTaps";
