@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ProductInfo from "../../Components/ProductInfo/ProductInfo";
 import { useParams } from "react-router";
 import { getProductById } from "../../services/product-services";
-import ProductDetailsTaps from "../../Components/productDetailsTaps/productDetailsTaps";
+import ProductDetailsTaps from "../../Components/ProductDetailsTaps/ProductDetailsTaps";
 import RelatedProduct from "../../Components/RelatedProduct/RelatedProduct";
 import ProductsDetailsSkeleton from "../../Components/skeleton/ProductsDetailsSkeleton";
 export default function ProductsDetails() {
