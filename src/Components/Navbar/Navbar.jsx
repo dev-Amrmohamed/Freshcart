@@ -22,6 +22,7 @@ import logoImg from "../../assets/freshcart-logo.svg";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/auth.context";
 import { CartContext } from "../../context/Cart.context";
+import Loading from "../Loading/Loading";
 
 export default function Navbar() {
   const { logOut, token } = useContext(AuthContext);
@@ -31,7 +32,7 @@ export default function Navbar() {
   }
   const { cartInfo, isLoading } = useContext(CartContext);
   if (isLoading) {
-    // return <Loading />;
+    return <Loading />;
   }
   return (
     <>
