@@ -61,8 +61,8 @@ export default function SignUp() {
         }, 3000);
       }
     } catch (error) {
-      console.log(error.response.data.message);
-      setIsExistError(error.response.data.message);
+      // console.log(error.response.data.message);
+      setIsExistError(error?.response?.data?.message);
     }
   }
 

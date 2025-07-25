@@ -2,21 +2,16 @@ import { apiClient } from "./api-client";
 
 export async function sendDataToSignUp(values) {
   try {
-    const option = {
-      url: `/auth/signup`,
-      method: "POST",
-      data: {
-        name: values.name,
-        email: values.email,
-        phone: values.phone,
-        password: values.password,
-        rePassword: values.rePassword,
-      },
-    };
-    const response = await apiClient.request(option);
-
-    return response;
+    const response = await apiClient.post("/auth/signup", {
+      name: values.name,
+      email: values.email,
+      phone: values.phone,
+      password: values.password,
+      rePassword: values.rePassword,
+    });
+    return response.data;
   } catch (error) {
+    console.error("Signup Error:", error.response?.data || error.message);
     throw error;
   }
 }
