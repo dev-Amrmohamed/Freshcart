@@ -121,7 +121,7 @@ export default function Navbar() {
                     {isLoading ? (
                       <FontAwesomeIcon icon={faSpinner} spin />
                     ) : (
-                      cartInfo.numOfCartItems
+                      cartInfo?.numOfCartItems
                     )}
                   </span>
                 </div>
