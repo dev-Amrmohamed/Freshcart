@@ -11,7 +11,6 @@ import { faFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { Link, useNavigate } from "react-router";
 import { useFormik } from "formik";
 import * as yup from "yup";
-import axios from "axios";
 import { toast } from "react-toastify";
 import { useState } from "react";
 import { sendDataToSignUp } from "../../services/api-services";
